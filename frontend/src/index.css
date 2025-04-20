@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "daisyui";
+body{
+background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0KdkGNnTJ7PpIERZrKk8YXeQ06iyCPV3Nw&s);
+background-size:cover;
+background-position: center;
+background-repeat:no-repeat;
+
+}
+::-webkit-scrollbar {
+  /* Customize the scrollbar width */
+  width:6px;
+}
+
+::-webkit-scrollbar-track {
+  /* Customize the scrollbar track */
+  background-color:aliceblue; 
+}
+::-webkit-scrollbar-thumb {
+  /* Customize the scrollbar thumb */
+  background:#000;
+  border-radius:10px;
+}
