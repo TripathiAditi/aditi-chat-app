@@ -20,7 +20,7 @@ dotenv.config({});
 app.use(express.urlencoded({extended:true}));
 app.use(express.json()); 
 app.use(cookieParser());
-const origins = ["http://localhost:5173"]
+const origins = ["http://localhost:5173", "https://aditi-chat-app-frontend.onrender.com"]
 const corsOption={
   origin: origins,
   credentials:true
