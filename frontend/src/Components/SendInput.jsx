@@ -16,7 +16,7 @@ const SendInput = () => {
       // console.log(message)
       // console.log(selectedUser)
       const res = await axios.post(
-        `http://localhost:8080/api/v1/message/send/${selectedUser?._id}`,
+        `${import.meta.env.VITE_BASE_URL}/api/v1/message/send/${selectedUser?._id}`,
         { message },
         {
           headers: {

@@ -1,8 +1,8 @@
-import Signup from './components/Signup';
+import Signup from './Components/Signup';
 import './App.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import HomePage from './components/HomePage';
-import Login from './components/Login';
+import Login from './Components/Login';
 import { useEffect, useState } from 'react';
 import {useSelector,useDispatch} from "react-redux";
 import io from "socket.io-client";

@@ -20,8 +20,9 @@ dotenv.config({});
 app.use(express.urlencoded({extended:true}));
 app.use(express.json()); 
 app.use(cookieParser());
+const origins = ["http://localhost:5173"]
 const corsOption={
-  origin: "http://localhost:5173",
+  origin: origins,
   credentials:true
 };
 app.use(cors(corsOption));
