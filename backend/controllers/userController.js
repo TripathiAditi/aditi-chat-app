@@ -66,14 +66,15 @@ export const login = async (req, res) => {
     const token = await jwt.sign(tokenData, process.env.JWT_SECRET_KEY, {
       expiresIn: "1d",
     });
-
+console.log("hello")
+console.log(token)
     return res
       .status(200)
       .cookie("chatApp_token", token, {
         maxAge: 1 * 24 * 60 * 60 * 1000,
         secure:true,
         httpOnly: true,
-        sameSite: "None",
+        sameSite: "none",
       })
       .json({
         _id: user._id,
