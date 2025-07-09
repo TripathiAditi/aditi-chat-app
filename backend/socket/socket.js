@@ -5,7 +5,7 @@ import express from "express";
 const app = express();
 
 const server = http.createServer(app);
-const origins = ["http://localhost:5173", "https://aditi-chat-app-frontend.onrender.com"]
+const origins = ["http://localhost:5173", "https://college-project-frontend-d5um.onrender.com"]
 const io = new Server(server, {
     cors:{
         origin: origins,
